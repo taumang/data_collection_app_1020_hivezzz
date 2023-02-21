@@ -41,11 +41,11 @@ const handleSignupClick =(event)=>{
   }
   axios.post('https://sheet.best/api/sheets/f12ce248-c4db-4278-a8da-9d22f716c32f',data_sheets)
   .then(()=>{
-    // console.log(response);
-    setName('');
-    setSurname('');
-    setPhonenumber('');
-    setEmail('');
+    console.log(data_sheets);
+    // setName('');
+    // setSurname('');
+    // setPhonenumber('');
+    // setEmail('');
     // setPaymentoption('');
   })
 }
