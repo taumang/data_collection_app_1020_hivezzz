@@ -37,7 +37,7 @@ const handleSignupClick =(event)=>{
     Surname:surname,
     Phonenumber:phonenumber,
     Email:email,
-    PaymentOption:paymentoption
+    // PaymentOption:paymentoption
   }
   axios.post('https://sheet.best/api/sheets/f12ce248-c4db-4278-a8da-9d22f716c32f',data_sheets)
   .then(()=>{
@@ -46,7 +46,7 @@ const handleSignupClick =(event)=>{
     setSurname('');
     setPhonenumber('');
     setEmail('');
-    setPaymentoption('');
+    // setPaymentoption('');
   })
 }
 
@@ -107,7 +107,7 @@ const handleSignupClick =(event)=>{
             value={email}
           />
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label htmlFor="paymentOption" className="block font-bold mb-2">
             Payment Option
           </label>
@@ -122,7 +122,7 @@ const handleSignupClick =(event)=>{
             <option value="monthly">Monthly: R25.00</option>
             <option value="annually">Annually: R348.95</option>
           </select>
-        </div>
+        </div> */}
         <div className="flex justify-center">
           <button
             className="bg-yellow-600 text-white px-4 py-2 rounded-lg"
